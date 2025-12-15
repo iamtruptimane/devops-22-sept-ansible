@@ -1,0 +1,15 @@
+---
+- name: create a folder inside /home/ec2-user/aws
+  hosts: localhost
+  tasks: 
+  - name: create a folder
+    ansible.builtin.file:
+     path: /home/ec2-user/aws
+     state: directory
+     mode: 0700
+
+
+
+     # mask 01
+    #setfactl, getfacl
+    #chmod -> hrishikesh -> sudo -> trupti -> 777 rw -> 7660
