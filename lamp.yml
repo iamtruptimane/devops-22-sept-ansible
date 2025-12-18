@@ -15,13 +15,6 @@
     ansible.builtin.dnf:
       name: mariadb105-server
       state: present 
-  # install php
-  - name: install php package
-    ansible.builtin.dnf:
-      name: 
-       - php
-       - php-fpm
-      state: present 
   # start httpd
   - name: start and enable httpd
     ansible.builtin.systemd_service:

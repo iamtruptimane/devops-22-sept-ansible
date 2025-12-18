@@ -6,7 +6,7 @@
   # install httpd
   - name: install httpd
     ansible.builtin.dnf:
-      name: httpd
+      name: httpd # hard coding
       state: absent
   # start and enabled httpd 
   - name: start and enabled httpd
